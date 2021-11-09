@@ -10,7 +10,7 @@ import {Route, Routes} from "react-router-dom"
 
 function App() {
   // heroku url
-  const URL = "http://sc-express-react-app.herokuapp.com/"
+  const URL = "https://sc-express-react-app.herokuapp.com/"
 
   return (
     <div className="App">
