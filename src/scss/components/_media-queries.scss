@@ -1,0 +1,59 @@
+@media screen and (min-width: 768px){
+    header, nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        margin: 10px;
+    }
+
+    header {
+        background-color: $primary;
+    }
+
+    nav a, .name {
+        margin: 10px;
+        color: white;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .intro h2 {
+        margin-left: 30px;
+    }
+
+    .projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .about {
+        width: 60%;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .project {
+        width: 35%;
+    }
+
+}

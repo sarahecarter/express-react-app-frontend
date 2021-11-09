@@ -16,21 +16,21 @@ const Projects = (props) => {
 
     // function that returns JSX when data is loaded
     const loaded = () => {
-        return projects.map((project) => (
-          <div>
+        return projects.map((project, index) => (
+          <div key={index} className="project">
             <h1>{project.name}</h1>
             <img src={project.image} />
             <a href={project.git}>
               <button>Github</button>
             </a>
             <a href={project.live}>
-              <button>live site</button>
+              <button>Live Site</button>
             </a>
           </div>
         ));
       };
     
-      return projects ? loaded() : <h1>Loading...</h1>;
+      return projects ? <div className="projects">{loaded()}</div> : <h1>Loading...</h1>;
 }
 
 export default Projects

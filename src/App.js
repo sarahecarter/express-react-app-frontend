@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 // import router components
 import {Route, Routes} from "react-router-dom"
+import "./scss/styles.scss"
 
 function App() {
   // heroku url

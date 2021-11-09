@@ -16,8 +16,11 @@ const About = (props) => {
 
     // function that returns JSX when we get the About data
     const loaded = () => (
-        <div>
-          <h2>{about.name}</h2>
+        <div className="about">
+          <div className="intro">
+            <h2>{about.name}</h2>
+            <img src={about.headshot}></img>
+          </div>
           <h3>{about.email}</h3>
           <p>{about.bio}</p>
         </div>
