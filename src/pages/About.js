@@ -12,7 +12,7 @@ const About = (props) => {
     };
 
     // make initial call for data with useEffect
-    useEffect(() => {getAboutData()}, []);
+    useEffect(() => getAboutData(), []);
 
     // function that returns JSX when we get the About data
     const loaded = () => (
